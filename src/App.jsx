@@ -1,7 +1,13 @@
 import './App.css'
+import Hero from './components/Hero'
 
 function App() {
-  return <h1>Stand Point</h1>       
+  return (
+    <main>
+          <Hero />
+    </main>
+
+  )
 }
 
 export default App
