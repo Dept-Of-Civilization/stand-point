@@ -1,11 +1,16 @@
 export default function Hero() {
     return (
-        <div className="flex mt-10 md:h-0 items-start lg:items-center justify-center min-h-screen">
-            <div className="grid grid-cols-1 md:grid-cols-2 ">
+        <div className="flex justify-center items-start lg:items-center py-10 md:py-16 lg:min-h-screen">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-y-6 md:gap-y-0 max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-6xl mx-auto">
                 <h1 className="col-span-2 text-white text-xl md:text-3xl text-center mb-6 md:tracking-[0.2em] selection:text-[#FFFDEE] font-light">Intellectual Excellence Championship</h1>
                 
                 <div className="flex col-span-2 justify-center">
-                    <img src="/src/images/stand-point.png" alt="" className="object-cover  md:h-[400px] w-[400px] md:w-[910px]" />
+                    <img src="/src/images/stand-point.png" alt="" className="w-full
+    max-w-sm
+    sm:max-w-md
+    md:max-w-lg
+    lg:max-w-4xl
+    object-contain" />
                 </div>
 
                 <h2 className="text-center col-span-2 text-white font-light mt-5 tracking-widest md:tracking-[0.5em]">Discover | Debate | Develop</h2>
