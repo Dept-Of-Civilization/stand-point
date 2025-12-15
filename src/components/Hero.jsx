@@ -5,7 +5,7 @@ export default function Hero() {
                 <h1 className="col-span-2 text-white text-xl md:text-3xl text-center mb-6 md:tracking-[0.2em] selection:text-[#FFFDEE] font-light">Intellectual Excellence Championship</h1>
                 
                 <div className="flex col-span-2 justify-center">
-                    <img src="/src/images/stand-point.png" alt="" className="w-full
+                    <img src="../images/stand-point.png" alt="" className="w-full
     max-w-sm
     sm:max-w-md
     md:max-w-lg
