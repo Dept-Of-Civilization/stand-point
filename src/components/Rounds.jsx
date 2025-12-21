@@ -1,6 +1,6 @@
 export default function Rounds() {
     return (
-        <div className="min-h-screen flex items-start justify-center">
+        <div className="min-h-screen flex items-start justify-center mb-5 md:mb-0">
             <div className="grid grid-cols-1 gap-8 m-5 md:m-20">
                 
                 {/* Round 1 */}
