@@ -16,12 +16,12 @@ export default function Hero() {
                 <h2 className="text-center col-span-2 text-white font-light mt-5 tracking-widest md:tracking-[0.5em]">Discover | Debate | Develop</h2>
 
                 <div className="flex  col-span-1 justify-center mt-10 md:mt-20 gap-2">
-                    <button className="text-primary p-2 text-2xl md:p-4 md:text-3xl tracking-widest font-extrabold bg-secondary ">22</button>
-                    <button className="text-primary p-2 text-2xl md:p-4 md:text-3xl tracking-widest font-extrabold bg-secondary ">23</button>
+                    <button className="text-primary p-2 text-2xl md:p-4 md:text-3xl tracking-widest font-extrabold bg-secondary ">24</button>
+                    <button className="text-primary p-2 text-2xl md:p-4 md:text-3xl tracking-widest font-extrabold bg-secondary ">25</button>
                 </div>
 
                 <div className="flex col-span-1 justify-start mt-10 md:mt-20">
-                    <p className="text-secondary tracking-[0.2em] font-bold text-2xl">December 2025 <br /> Monday Tuesday</p> 
+                    <p className="text-secondary tracking-[0.2em] font-bold text-2xl">December 2025 <br /> Wednesday, Thursday</p> 
                 </div>
             </div>
         </div>
