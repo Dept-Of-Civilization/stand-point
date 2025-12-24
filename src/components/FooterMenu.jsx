@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { Home, Image, Trophy, Info } from "lucide-react"
+import { Home, Image, Trophy, Info, } from "lucide-react"
 
 export default function BottomNav() {
   return (
@@ -8,6 +8,7 @@ export default function BottomNav() {
 
         <Tab to="/" icon={<Home />} label="Home" />
         <Tab to="/gallery" icon={<Image />} label="Gallery" />
+        <Tab to="/results" icon={<Trophy />} label="Result" />
         <Tab to="/about" icon={<Info />} label="About" />
 
       </div>

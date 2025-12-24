@@ -1,21 +1,72 @@
 export default function Prizes() {
-    return (
-        <div className="flex flex-col items-center justify-center mb-5 md:mb-25">
-                <h2 className="text-secondary tracking-wider font-extrabold text-6xl font-mono">PRIZES</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3  m-10 gap-8">
-                    <div className="order-2 md:order-1 lg:order-1 col-span-1 md:col-span-1 bg-black p-10 w-[300px] md:w-[400px] animate-pulse rounded-lg shadow-lg shadow-[#E5E5E5] ">
-                        <h1 className="text-center text-[#E5E5E5] text-4xl font-bold">RUNNER UP</h1>
-                        <p className="text-center text-3xl font-bold text-[#E5E5E5] mt-4">₹ 3,333</p>
-                    </div>
-                    <div className="order-1 md:order-2 lg:order-2 col-span-1 md:col-span-1 bg-black p-10 animate-pulse rounded-lg shadow-lg shadow-[#FFD700]">
-                        <h1 className="text-center text-[#FFD700] text-4xl font-bold">CHAMPION</h1>
-                        <p className="text-center text-3xl font-bold text-[#FFD700] mt-4">₹ 4,444</p>
-                    </div>
-                    <div className="order-3 md:order-3 lg:order-3 col-span-1 md:col-span-1 bg-black p-10 animate-pulse rounded-lg shadow-lg shadow-[#E5E5E5]">
-                        <h1 className="text-center text-[#E6A65C] text-4xl font-bold">2ND RUNNER UP</h1>
-                        <p className="text-center text-3xl font-bold text-[#E6A65C] mt-4">₹ 2,222</p>
-                    </div>
-                </div>
-        </div>
-    )
+  return (
+    <section className="flex flex-col items-center justify-center ">
+      <h2 className="text-secondary tracking-wider font-extrabold text-6xl font-mono mb-16">
+        PRIZES
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-end">
+
+        {/* 🥈 RUNNER UP */}
+        <Podium
+          title="RUNNER UP"
+          amount="₹ 3,333"
+          glow="shadow-blue-500/50"
+          text="text-blue-400"
+          height="h-48"
+          order="md:order-1"
+        />
+
+        {/* 🥇 CHAMPION */}
+        <Podium
+          title="CHAMPION"
+          amount="₹ 4,444"
+          glow="shadow-yellow-400/70"
+          text="text-yellow-400"
+          height="h-64"
+          order="md:order-2"
+          highlight
+        />
+
+        {/* 🥉 2ND RUNNER UP */}
+        <Podium
+          title="2ND RUNNER UP"
+          amount="₹ 2,222"
+          glow="shadow-orange-400/60"
+          text="text-orange-400"
+          height="h-40"
+          order="md:order-3"
+        />
+
+      </div>
+    </section>
+  )
+}
+
+/* 🔹 Reusable Podium Component */
+function Podium({ title, amount, glow, text, height, order, highlight }) {
+  return (
+    <div className={`flex flex-col items-center justify-end ${order}`}>
+
+      {/* Prize Card */}
+      <div
+        className={`w-[220px] h-[220px] rounded-full bg-black
+        flex flex-col items-center justify-center
+        shadow-2xl ${glow}
+        ${highlight ? "scale-110" : ""}
+        transition-transform duration-300
+        animate-pulse hover:animate-bounce
+        `}
+      >
+        <h3 className={`text-xl font-bold ${text}`}>{title}</h3>
+        <p className={`text-4xl font-extrabold mt-3 ${text}`}>{amount}</p>
+      </div>
+
+      {/* Podium Base */}
+      <div
+        className={`w-[240px] ${height} mt-6 rounded-xl
+        bg-gradient-to-t from-black to-transparent`}
+      />
+    </div>
+  )
 }
