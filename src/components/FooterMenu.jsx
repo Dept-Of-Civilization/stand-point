@@ -9,7 +9,7 @@ export default function BottomNav() {
         <Tab to="/" icon={<Home />} label="Home" />
         <Tab to="/gallery" icon={<Image />} label="Gallery" />
         <Tab to="/results" icon={<Trophy />} label="Result" />
-        <Tab to="/about" icon={<Info />} label="About" />
+        {/* <Tab to="/about" icon={<Info />} label="About" /> */}
 
       </div>
     </nav>
