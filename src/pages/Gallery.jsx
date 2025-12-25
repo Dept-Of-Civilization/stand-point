@@ -53,10 +53,10 @@ export default function Gallery() {
               opacity-0 group-hover:opacity-100
               transition-all duration-500
               px-4 py-2 rounded-full
-              bg-white text-black text-sm font-bold
+              bg-primary text-secondary text-sm font-bold
               hover:scale-105"
             >
-              ⬇ Download
+              Download
             </a>
           </article>
         ))}
