@@ -3,13 +3,13 @@ export default function Gallery() {
     // phase 3
 
     // phase 2
-    
+
     // pase 1
-    "/public/images/gallery/phase-one/fr 1.1.jpg",
-    "/public/images/gallery/phase-one/fr 1.2.jpg",
-    "/public/images/gallery/phase-one/fr 1.3.jpg",
-    "/public/images/gallery/phase-one/fr 1.4.jpg",
-    "/public/images/gallery/phase-one/fr 1.5.jpg",
+    "/images/gallery/phase-one/fr 1.1.jpg",
+    "/images/gallery/phase-one/fr 1.2.jpg",
+    "/images/gallery/phase-one/fr 1.3.jpg",
+    "/images/gallery/phase-one/fr 1.4.jpg",
+    "/images/gallery/phase-one/fr 1.5.jpg",
   ]
 
   return (
