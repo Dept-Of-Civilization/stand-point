@@ -4,6 +4,7 @@ import Footer from "../components/Footer.jsx";
 import Hero from "../components/Hero.jsx";
 import Prizes from "../components/Prizes.jsx";
 import Rounds from "../components/Rounds.jsx";
+import Timeline from "../components/TimeLine.jsx";
 export default function Home() {
     return (
         <>
@@ -11,6 +12,7 @@ export default function Home() {
             <About />
             <Rounds />
             <Prizes />
+            <Timeline />
             <ByLaws />
             <Footer />
         </>
